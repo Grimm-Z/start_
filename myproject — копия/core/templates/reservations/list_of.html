@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to the Cinema System</h1>
+    <p>Here you can see list of tickets</p>
+    <ul>
+        {% for tick in Ticket %}
+        <li>
+            <h2>{{tick.film_name}}</h2>
+            <p>{{tick.already_ordered}}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
